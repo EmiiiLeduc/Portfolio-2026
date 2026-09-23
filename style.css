@@ -1299,3 +1299,17 @@ footer div {
   }
 
 }
+
+@media (max-width: 700px) {
+
+  body {
+    background: #f3f0e9 !important;
+  }
+
+  .about-text,
+  .project-description,
+  .project-content > p {
+    font-size: 12px !important;
+  }
+
+}
