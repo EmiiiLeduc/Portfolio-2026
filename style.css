@@ -1105,3 +1105,130 @@ footer div {
     font-size: 11px;
   }
 }
+
+/* ========================================
+   CORRECTION TITRES H2 SUR MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .project-content h2 {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+
+    margin-top: 35px;
+    margin-bottom: 12px;
+
+    color: #111;
+  }
+
+}
+
+/* ========================================
+   AJUSTEMENTS MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  /* Titres dans les projets */
+
+  .project-content h2 {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+
+    margin-top: 35px;
+    margin-bottom: 12px;
+
+    color: #111;
+  }
+
+
+  /* Texte descriptif principal */
+
+  .project-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* Paragraphes des projets */
+
+  .project-content > p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+
+  /* Petits textes à côté des images */
+
+  .image-text-row p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+
+  /* Légendes storyboard */
+
+  .storyboard-item p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+}
+
+/* ========================================
+   TEXTES MOBILE — TAILLE RÉDUITE
+======================================== */
+
+@media (max-width: 700px) {
+
+  /* Texte de la section À PROPOS */
+  .about-text {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  /* Description en haut des pages projets */
+  .project-description {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+
+  /* Textes principaux dans les projets */
+  .project-content > p {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+
+  /* Texte à côté des images */
+  .image-text-row p {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+
+  /* Textes sous les storyboards */
+  .storyboard-item p {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+
+  /* On conserve les H2 visibles */
+  .project-content h2 {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 35px;
+    margin-bottom: 12px;
+  }
+
+}
