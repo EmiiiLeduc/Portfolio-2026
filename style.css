@@ -1,3 +1,7 @@
+/* ========================================
+   RESET
+======================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,9 @@ a {
 }
 
 
-/* HERO */
+/* ========================================
+   NAVIGATION
+======================================== */
 
 nav {
   display: flex;
@@ -38,8 +44,27 @@ nav {
   z-index: 1000;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-size: 13px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
 .hero {
-  color: White;
+  color: white;
   min-height: 60vh;
   padding: 0;
 
@@ -50,20 +75,6 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  font-size: 14px;
 }
 
 .hero-content {
@@ -77,17 +88,17 @@ nav {
 }
 
 .intro {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .hero h1 {
-  font-size: clamp(55px, 9vw, 140px);
+  font-size: clamp(46px, 7vw, 110px);
   line-height: 0.9;
   max-width: 1200px;
-  letter-spacing: -5px;
+  letter-spacing: -4px;
 }
 
 .hero h1 span {
@@ -97,15 +108,18 @@ nav {
 }
 
 .button {
-  margin-top: 50px;
+  margin-top: 40px;
   width: fit-content;
-  padding: 16px 28px;
+
+  padding: 13px 24px;
 
   background: transparent;
   color: white;
 
   border: 1px solid transparent;
   border-radius: 100px;
+
+  font-size: 13px;
 
   transition: 0.3s;
 }
@@ -115,25 +129,30 @@ nav {
   border-color: white;
 }
 
-/* SECTIONS */
+
+/* ========================================
+   SECTIONS
+======================================== */
 
 section {
-  padding: 80px 6%;
+  padding: 70px 6%;
 }
 
 .section-number {
-  font-size: 13px;
-  margin-bottom: 20px;
+  font-size: 11px;
+  margin-bottom: 18px;
   opacity: 0.5;
 }
 
 section h2 {
-  font-size: clamp(40px, 6vw, 85px);
-  letter-spacing: -3px;
+  font-size: clamp(32px, 4.5vw, 62px);
+  letter-spacing: -2px;
 }
 
 
-/* ABOUT */
+/* ========================================
+   À PROPOS
+======================================== */
 
 .about {
   background: #f3f0e9;
@@ -142,15 +161,20 @@ section h2 {
 }
 
 .about-text {
-  font-size: 25px;
   width: 100%;
   max-width: none;
-  line-height: 1.2;
-  margin-top: 60px;
+
+  margin-top: 45px;
+
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 400;
 }
 
 
-/* PROJECTS */
+/* ========================================
+   PROJETS — PAGE D'ACCUEIL
+======================================== */
 
 .projects {
   background: #111;
@@ -164,7 +188,7 @@ section h2 {
   justify-content: center;
 
   gap: 60px 40px;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .project-image {
@@ -177,6 +201,9 @@ section h2 {
 .project-card:hover .project-image {
   transform: scale(0.98);
 }
+
+
+/* IMAGES DES 8 PROJETS */
 
 .project-one {
   background-image: url("images/projet1.jpg");
@@ -226,18 +253,22 @@ section h2 {
   background-position: center;
 }
 
+
+/* INFORMATIONS SOUS LES PROJETS */
+
 .project-info {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .project-info p {
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .project-info h3 {
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .project-link {
@@ -246,7 +277,10 @@ section h2 {
   display: block;
 }
 
-/* PAGE PROJET */
+
+/* ========================================
+   PAGES PROJETS
+======================================== */
 
 .project-page {
   padding: 40px 4% 120px;
@@ -254,87 +288,67 @@ section h2 {
 
 .back-button {
   display: inline-block;
-  font-size: 14px;
-  margin-bottom: 80px;
+  font-size: 13px;
+  margin-bottom: 70px;
 }
 
 .project-header {
   width: 100%;
   max-width: none;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .project-category {
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .project-header h1 {
-  font-size: clamp(48px, 8vw, 120px);
+  font-size: clamp(40px, 6vw, 90px);
   line-height: 0.95;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 }
 
 .project-description {
-  font-size: 20px;
-  line-height: 1.4;
   width: 100%;
   max-width: none;
-  margin-top: 40px;
+
+  margin-top: 35px;
+
+  font-size: 16px;
+  line-height: 1.55;
 }
 
-/* PROJET 5 - VISUEL 16:9 */
 
-.project5-wide-image {
-  width: 100%;
-  margin: 60px 0;
-}
-
-.project5-wide-image img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
-}
-
-/* PROJET 5 - 3 VISUELS COTE A COTE */
-
-.project5-images {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-
-  width: 100%;
-  margin: 60px 0;
-}
-
-.project5-images img {
-  width: calc((100% - 40px) / 3);
-  height: auto;
-  display: block;
-}
-
-/* PROJET 6 - VISUEL HORIZONTAL */
-
-.project6-horizontal-image {
-  width: 100%;
-  margin: 60px 0;
-}
-
-.project6-horizontal-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* CONTENU DU PROJET */
+/* ========================================
+   CONTENU DES PROJETS
+======================================== */
 
 .project-content {
   width: 100%;
   max-width: none;
   margin: 0 auto;
+}
+
+
+/* TEXTES */
+
+.project-content h2 {
+  max-width: 800px;
+  margin-top: 50px;
+  margin-bottom: 18px;
+
+  font-size: clamp(22px, 2.7vw, 30px);
+  letter-spacing: -1px;
+}
+
+.project-content > p {
+  width: 100%;
+  max-width: none;
+
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 
@@ -344,6 +358,7 @@ section h2 {
   width: 100%;
   height: auto;
   display: block;
+
   margin: 60px 0;
 }
 
@@ -353,18 +368,25 @@ section h2 {
 .project-content > video {
   width: 100%;
   aspect-ratio: 16 / 9;
+
   object-fit: contain;
   background: black;
+
   display: block;
+
   margin: 60px 0;
 }
 
-/* 3 VIDEOS VERTICALES 9:16 */
+
+/* ========================================
+   PROJET 2 — VIDÉOS VERTICALES
+======================================== */
 
 .vertical-videos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
   gap: 20px;
 
   width: 100%;
@@ -372,18 +394,25 @@ section h2 {
 }
 
 .vertical-videos video {
+  display: block;
+
   width: calc((100% - 40px) / 3);
   aspect-ratio: 9 / 16;
+
   object-fit: cover;
-  display: block;
+  background: black;
 }
 
-/* 3 VIDEOS 16:9 COTE A COTE */
+
+/* ========================================
+   PROJET 3 — VIDÉOS HORIZONTALES
+======================================== */
 
 .horizontal-videos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
   gap: 20px;
 
   width: 100%;
@@ -393,16 +422,22 @@ section h2 {
 .horizontal-videos video {
   width: calc((100% - 40px) / 3);
   aspect-ratio: 16 / 9;
+
   object-fit: contain;
   display: block;
+
   background: black;
 }
 
-/* VISUELS PRESSE - 2 PAR LIGNE */
+
+/* ========================================
+   VISUELS PRESSE — 2 PAR LIGNE
+======================================== */
 
 .vertical-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 30px;
 
   width: 100%;
@@ -415,28 +450,17 @@ section h2 {
   display: block;
 }
 
-/* TEXTES */
 
-.project-content h2 {
-  font-size: clamp(28px, 4vw, 40px);
-  margin-top: 50px;
-  margin-bottom: 20px;
-  max-width: 800px;
-}
-
-.project-content > p {
-  font-size: 20px;
-  line-height: 1.6;
-  width: 100%;
-  max-width: none;
-}
-
-/* IMAGE + TEXTE */
+/* ========================================
+   IMAGE + TEXTE
+======================================== */
 
 .image-text-row {
   display: flex;
   align-items: center;
+
   gap: 50px;
+
   margin: 60px 0;
 }
 
@@ -444,136 +468,84 @@ section h2 {
   width: 300px;
   max-width: 40%;
   height: auto;
+
   margin: 0;
 }
 
 .image-text-row p {
-  font-size: 16px;
-  line-height: 1.3;
   margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 
-/* MOBILE */
+/* ========================================
+   PROJET 5 — VISUEL 16:9
+======================================== */
 
-@media (max-width: 700px) {
-
-  .project-page {
-    padding: 25px 4% 80px;
-  }
-
-  .back-button {
-    margin-bottom: 50px;
-  }
-
-  .project-header {
-    margin-bottom: 50px;
-  }
-
-  .project-header h1 {
-    letter-spacing: -2px;
-  }
-
-  .project-content > img,
-  .project-content > video {
-    margin: 35px 0;
-  }
-
-  .image-text-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .image-text-row img {
-    width: 180px;
-    max-width: 100%;
-  }
-
+.project5-wide-image {
+  width: 100%;
+  margin: 60px 0;
 }
 
-/* PROJET SUIVANT */
+.project5-wide-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 
-.next-project {
+  object-fit: cover;
   display: block;
-  margin-top: 100px;
-  padding: 80px 0;
-  border-top: 1px solid #aaa;
-  color: inherit;
-  text-decoration: none;
-}
-
-.next-project span {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.next-project h2 {
-  font-size: 30px;
-  margin-top: 20px;
-  line-height: 1;
-  transition: transform 0.3s ease;
-}
-
-.next-project:hover h2 {
-  transform: translateX(20px);
-}
-
-/* SKILLS */
-
-.skills {
-  background-image: url("images/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color: white;
-  padding: 50px 6% 50px;
-}
-
-.skills .section-number {
-  margin-bottom: 10px;
-  opacity: 0.6;
-}
-
-.skills > h2 {
-  font-size: clamp(40px, 5vw, 70px);
-  margin-bottom: 45px;
 }
 
 
-/* BLOCS SKILLS */
+/* ========================================
+   PROJET 5 — 3 VISUELS
+======================================== */
 
-.skills-block {
-  margin-top: 0;
-  padding: 15px 0;
+.project5-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  gap: 20px;
+
+  width: 100%;
+  margin: 60px 0;
 }
 
-.skills-block:last-of-type {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+.project5-images img {
+  width: calc((100% - 40px) / 3);
+  height: auto;
+
+  display: block;
 }
 
 
-/* PETITS TITRES */
+/* ========================================
+   PROJET 6 — IMAGE HORIZONTALE
+======================================== */
 
-.skills-block h3 {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  margin-bottom: 12px;
-
-  opacity: 0.65;
+.project6-horizontal-image {
+  width: 100%;
+  margin: 60px 0;
 }
 
-/* STORYBOARD */
+.project6-horizontal-image img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+}
+
+
+/* ========================================
+   STORYBOARD
+======================================== */
 
 .storyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   gap: 20px;
 
   width: 100%;
@@ -586,11 +558,13 @@ section h2 {
   display: block;
 }
 
+
 /* STORYBOARD DÉTAILLÉ */
 
 .storyboard-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 50px 30px;
 
   width: 100%;
@@ -604,32 +578,131 @@ section h2 {
 }
 
 .storyboard-item p {
-  font-size: 15px;
+  margin-top: 12px;
+
+  font-size: 13px;
   line-height: 1.5;
-  margin-top: 15px;
+
   text-align: center;
 }
 
-/* CONTENU */
+
+/* ========================================
+   PROJET SUIVANT
+======================================== */
+
+.next-project {
+  display: block;
+
+  margin-top: 100px;
+  padding: 70px 0;
+
+  border-top: 1px solid #aaa;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.next-project span {
+  font-size: 10px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.next-project h2 {
+  margin-top: 18px;
+
+  font-size: 26px;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.next-project:hover h2 {
+  transform: translateX(20px);
+}
+
+
+/* ========================================
+   COMPÉTENCES
+======================================== */
+
+.skills {
+  background-image: url("images/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  padding: 50px 6%;
+}
+
+.skills .section-number {
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.skills > h2 {
+  margin-bottom: 40px;
+  font-size: clamp(32px, 4vw, 54px);
+}
+
+
+/* BLOCS */
+
+.skills-block {
+  margin-top: 0;
+  padding: 14px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.skills-block:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/* PETITS TITRES */
+
+.skills-block h3 {
+  margin-bottom: 10px;
+
+  font-size: 10px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  opacity: 0.65;
+}
+
+
+/* TEXTE COMPÉTENCES */
 
 .skills-line {
-  font-size: clamp(14px, 1.5vw, 20px);
-  line-height: 1.4;
   max-width: 1200px;
   margin: 0;
+
+  font-size: clamp(13px, 1.3vw, 17px);
+  line-height: 1.5;
 }
+
 
 /* LOGICIELS */
 
 .software-block {
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .software-block h3 {
-  font-size: 12px;
+  margin-bottom: 18px;
+
+  font-size: 10px;
+
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+
   opacity: 0.65;
 }
 
@@ -637,46 +710,56 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   gap: 25px;
 }
 
 .software img {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
+
   object-fit: contain;
+
   margin: 0;
 }
 
 .software p {
-  font-size: 11px;
   margin-top: 6px;
+  font-size: 10px;
 }
 
 
-/* CONTACT */
+/* ========================================
+   CONTACT
+======================================== */
 
 .contact {
   background: #ff4f2e;
   color: #111;
 
   min-height: auto;
-  padding: 50px 6%;
+
+  padding: 45px 6%;
 }
 
 .contact .section-number {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 30px;
 }
 
 .contact-info a {
-  font-size: 18px;
   margin: 0;
+
+  font-size: 15px;
+  font-weight: 400;
+
   text-decoration: none;
 }
 
@@ -685,14 +768,20 @@ section h2 {
 }
 
 
-/* FOOTER */
+/* ========================================
+   FOOTER
+======================================== */
 
 footer {
-  padding: 30px 6%;
+  padding: 25px 6%;
+
   background: #111;
   color: white;
+
   display: flex;
   justify-content: space-between;
+
+  font-size: 12px;
 }
 
 footer div {
@@ -701,63 +790,318 @@ footer div {
 }
 
 
-/* MOBILE */
+/* ========================================
+   PAGE CV SIMPLE
+======================================== */
+
+.cv-simple-page {
+  margin: 0;
+
+  min-height: 100vh;
+
+  background: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cv-simple {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.cv-simple h1 {
+  margin: 0 0 12px;
+
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.cv-simple p {
+  margin: 0 0 30px;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* BOUTON TÉLÉCHARGER CV */
+
+.cv-download {
+  display: inline-block;
+
+  padding: 11px 22px;
+
+  background: black;
+  color: white;
+
+  border: 1px solid black;
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  transition: 0.3s ease;
+}
+
+.cv-download:hover {
+  background: white;
+  color: black;
+}
+
+
+/* RETOUR PORTFOLIO */
+
+.cv-back {
+  margin-top: 22px;
+
+  color: black;
+
+  text-decoration: none;
+
+  font-size: 12px;
+}
+
+.cv-back:hover {
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   VERSION MOBILE
+======================================== */
 
 @media (max-width: 700px) {
+
+  /* NAVIGATION */
 
   .nav-links {
     display: none;
   }
 
-  .hero h1 {
-    letter-spacing: -3px;
+
+  /* HERO */
+
+ .hero h1 {
+    font-size: clamp(40px, 14vw, 65px);
+    letter-spacing: -2px;
   }
+
+  .intro {
+    font-size: 10px;
+  }
+
+
+  /* SECTIONS */
+
+  section {
+    padding: 60px 6%;
+  }
+
+  section h2 {
+    font-size: clamp(28px, 9vw, 48px);
+  }
+
+
+  /* À PROPOS */
+
+  .about {
+    padding: 45px 6%;
+  }
+
+  .about-text {
+    margin-top: 30px;
+
+    font-size: 17px;
+    line-height: 1.45;
+  }
+
+
+  /* PROJETS */
 
   .project-grid {
     grid-template-columns: minmax(0, 1fr);
+
     gap: 40px;
+
     margin-top: 40px;
   }
 
-  section {
-    padding: 80px 6%;
+  .project-info h3 {
+    font-size: 20px;
   }
 
-  footer {
+
+  /* PAGES PROJETS */
+
+  .project-page {
+    padding: 25px 4% 80px;
+  }
+
+  .back-button {
+    margin-bottom: 50px;
+    font-size: 12px;
+  }
+
+  .project-header {
+    margin-bottom: 50px;
+  }
+
+ .project-header h1 {
+    font-size: clamp(36px, 13vw, 60px);
+    letter-spacing: -2px;
+  }
+
+.project-description {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+ .project-content h2 {
+    font-size: 21px;
+  }
+
+.project-content > p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+  /* IMAGES / VIDÉOS */
+
+  .project-content > img,
+  .project-content > video {
+    margin: 35px 0;
+  }
+
+
+  /* IMAGE + TEXTE */
+
+  .image-text-row {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .image-text-row img {
+    width: 180px;
+    max-width: 100%;
+  }
+
+.image-text-row p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+  /* VIDÉOS VERTICALES */
+
+  .vertical-videos {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 40px 0;
+  }
+
+  .vertical-videos video {
+    width: calc((100% - 20px) / 3);
+
+    height: auto;
+    aspect-ratio: 9 / 16;
+
+    object-fit: cover;
+
+    background: black;
+  }
+
+
+  /* VIDÉOS HORIZONTALES */
+
+  .horizontal-videos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .horizontal-videos video {
+    width: 100%;
+  }
+
+
+  /* IMAGES VERTICALES */
+
+  .vertical-images {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vertical-images img {
+    width: 100%;
+  }
+
+
+  /* PROJET 5 */
+
+  .project5-images {
     flex-direction: column;
     gap: 20px;
   }
 
-.vertical-videos {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  margin: 60px 0;
+  .project5-images img {
+    width: 100%;
+  }
+
+
+  /* STORYBOARD */
+
+  .storyboard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+.storyboard-item p {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-.vertical-videos video {
-  display: block;
-  width: calc((100% - 40px) / 3);
-  height: auto;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  background: black;
-}
+  .storyboard-detail {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
 
-.vertical-images {
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
 
-.vertical-images img {
-  width: 100%;
-}
+  /* CONTACT */
 
-.contact-info {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+
+    font-size: 11px;
+  }
 }
