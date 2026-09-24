@@ -1163,7 +1163,7 @@ footer div {
      2 × 2
   ======================================== */
 
-  .project3-page .vertical-images {
+  body.project3-page .vertical-images {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 
@@ -1174,7 +1174,7 @@ footer div {
     margin: 40px 0;
   }
 
-  .project3-page .vertical-images img {
+  body.project3-page .vertical-images img {
     display: block;
 
     width: 100%;
