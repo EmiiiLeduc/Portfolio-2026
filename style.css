@@ -1060,39 +1060,64 @@ footer div {
     line-height: 1.6;
   }
 
+/* PROJET 1 — 3 VISUELS MOBILE */
+
 .project1-campaign-images {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin: 40px 0;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 40px 0 !important;
+
+  overflow: hidden;
+}
+
+.project1-campaign-images img {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+
+  margin: 0 !important;
 }
 
 .project1-campaign-images img:nth-child(3) {
-  grid-column: 1 / 3;
-  width: calc(50% - 6px);
-  justify-self: center;
+  grid-column: 1 / 3 !important;
+
+  width: calc(50% - 6px) !important;
+  max-width: calc(50% - 6px) !important;
+
+  justify-self: center !important;
 }
 
   /* VIDÉOS VERTICALES */
 
- /* PROJET 2 — VIDÉOS VERTICALES MOBILE */
+ /* PROJET 2 — 3 VIDÉOS MOBILE */
 
 .vertical-videos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 
-  width: 100%;
-  gap: 25px;
-  margin: 40px 0;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  gap: 25px !important;
+  margin: 40px 0 !important;
 }
 
 .vertical-videos video {
-  width: 75%;
-  height: auto;
-  aspect-ratio: 9 / 16;
+  display: block !important;
 
+  width: 75% !important;
+  max-width: 75% !important;
+  height: auto !important;
+
+  aspect-ratio: 9 / 16;
   object-fit: cover;
-  background: black;
 }
 
 
