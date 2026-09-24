@@ -905,6 +905,12 @@ footer div {
   letter-spacing: -2px;
 }
 
+/* CV CONTACT — CACHÉ SUR DESKTOP */
+
+.contact-cv {
+  display: none;
+}
+
 /* ========================================
    VERSION MOBILE
 ======================================== */
@@ -1397,5 +1403,11 @@ footer div {
   .cv-back {
     font-size: 12px;
   }
+
+/* CV CONTACT — VISIBLE SUR MOBILE */
+
+.contact-cv {
+  display: block;
+}
 
 }
