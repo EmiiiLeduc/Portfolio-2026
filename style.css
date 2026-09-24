@@ -896,7 +896,10 @@ footer div {
 
 @media (max-width: 700px) {
 
-  /* NAVIGATION */
+
+  /* ========================================
+     NAVIGATION
+  ======================================== */
 
   .nav-links {
     display: none;
@@ -907,7 +910,9 @@ footer div {
   }
 
 
-  /* HERO */
+  /* ========================================
+     HERO
+  ======================================== */
 
   .hero h1 {
     font-size: clamp(40px, 14vw, 65px);
@@ -924,7 +929,9 @@ footer div {
   }
 
 
-  /* SECTIONS */
+  /* ========================================
+     SECTIONS
+  ======================================== */
 
   section {
     padding: 60px 6%;
@@ -940,7 +947,9 @@ footer div {
   }
 
 
-  /* À PROPOS */
+  /* ========================================
+     À PROPOS
+  ======================================== */
 
   .about {
     padding: 45px 6%;
@@ -953,7 +962,9 @@ footer div {
   }
 
 
-  /* PROJETS — ACCUEIL */
+  /* ========================================
+     PROJETS — PAGE D'ACCUEIL
+  ======================================== */
 
   .project-grid {
     grid-template-columns: 1fr;
@@ -971,7 +982,9 @@ footer div {
   }
 
 
-  /* PAGE PROJET */
+  /* ========================================
+     PAGES PROJETS — RÈGLES GÉNÉRALES
+  ======================================== */
 
   .project-page {
     padding: 25px 4% 80px;
@@ -998,7 +1011,7 @@ footer div {
   }
 
 
-  /* DESCRIPTION DU PROJET */
+  /* DESCRIPTION */
 
   .project-description {
     margin-top: 25px;
@@ -1007,7 +1020,7 @@ footer div {
   }
 
 
-  /* TITRES H2 DES PROJETS */
+  /* TITRES */
 
   .project-content h2 {
     display: block;
@@ -1025,7 +1038,7 @@ footer div {
   }
 
 
-  /* TEXTES DES PROJETS */
+  /* TEXTES */
 
   .project-content > p {
     font-size: 14px;
@@ -1033,7 +1046,7 @@ footer div {
   }
 
 
-  /* GRANDES IMAGES / VIDÉOS */
+  /* GRANDES IMAGES ET VIDÉOS */
 
   .project-content > img,
   .project-content > video {
@@ -1046,6 +1059,7 @@ footer div {
   .image-text-row {
     flex-direction: column;
     align-items: flex-start;
+
     gap: 20px;
     margin: 35px 0;
   }
@@ -1060,86 +1074,78 @@ footer div {
     line-height: 1.6;
   }
 
-/* PROJET 1 — 3 VISUELS MOBILE */
 
-.project1-campaign-images {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 12px !important;
+  /* ========================================
+     PROJET 1 — 3 VISUELS
+     2 EN HAUT + 1 CENTRÉ EN DESSOUS
+  ======================================== */
 
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 40px 0 !important;
+  .project1-campaign-images {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 
-  overflow: hidden;
-}
+    width: 100% !important;
+    max-width: 100% !important;
 
-.project1-campaign-images img {
-  display: block !important;
+    gap: 12px !important;
+    margin: 40px 0 !important;
 
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
+    overflow: hidden;
+  }
 
-  margin: 0 !important;
-}
+  .project1-campaign-images img {
+    display: block !important;
 
-.project1-campaign-images img:nth-child(3) {
-  grid-column: 1 / 3 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
 
-  width: calc(50% - 6px) !important;
-  max-width: calc(50% - 6px) !important;
+    margin: 0 !important;
+  }
 
-  justify-self: center !important;
-}
+  .project1-campaign-images img:nth-child(3) {
+    grid-column: 1 / 3 !important;
 
-  /* VIDÉOS VERTICALES */
+    width: calc(50% - 6px) !important;
+    max-width: calc(50% - 6px) !important;
 
- /* PROJET 2 — 3 VIDÉOS MOBILE */
+    justify-self: center !important;
+  }
 
-.vertical-videos {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
 
-  width: 100% !important;
-  max-width: 100% !important;
+  /* ========================================
+     PROJET 2 — 3 VIDÉOS VERTICALES
+     L'UNE SOUS L'AUTRE
+  ======================================== */
 
-  gap: 25px !important;
-  margin: 40px 0 !important;
-}
+  .vertical-videos {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
 
-.vertical-videos video {
-  display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
 
-  width: 75% !important;
-  max-width: 75% !important;
-  height: auto !important;
+    gap: 25px !important;
+    margin: 40px 0 !important;
+  }
 
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-}
+  .vertical-videos video {
+    display: block !important;
 
-/* PROJET 3 — 4 IMAGES MOBILE */
+    width: 75% !important;
+    max-width: 75% !important;
+    height: auto !important;
 
-.vertical-images {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+  }
 
-  width: 100%;
-  gap: 12px;
-  margin: 40px 0;
-}
 
-.vertical-images img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-  /* VIDÉOS HORIZONTALES */
+  /* ========================================
+     PROJET 3 — VIDÉOS HORIZONTALES
+     L'UNE SOUS L'AUTRE
+  ======================================== */
 
   .horizontal-videos {
     flex-direction: column;
@@ -1152,23 +1158,40 @@ footer div {
   }
 
 
-  /* IMAGES VERTICALES */
+  /* ========================================
+     PROJET 3 — 4 IMAGES
+     2 × 2
+  ======================================== */
 
-  .vertical-images {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .project3-page .vertical-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    width: 100%;
+    max-width: 100%;
+
+    gap: 12px;
     margin: 40px 0;
   }
 
-  .vertical-images img {
+  .project3-page .vertical-images img {
+    display: block;
+
     width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
   }
 
 
-  /* PROJET 5 */
+  /* ========================================
+     PROJET 5 — 3 VISUELS
+  ======================================== */
 
   .project5-images {
     flex-direction: column;
+
     gap: 20px;
     margin: 40px 0;
   }
@@ -1177,40 +1200,21 @@ footer div {
     width: 100%;
   }
 
-/* PROJET 1 — 3 VISUELS MOBILE */
 
-.project1-campaign-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-
-  width: 100%;
-  margin: 40px 0;
-}
-
-.project1-campaign-images img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0;
-}
-
-.project1-campaign-images img:nth-child(3) {
-  grid-column: 1 / 3;
-  width: calc(50% - 6px);
-  justify-self: center;
-}
-
-  /* STORYBOARD */
+  /* ========================================
+     STORYBOARD
+  ======================================== */
 
   .storyboard {
     grid-template-columns: repeat(2, 1fr);
+
     gap: 12px;
     margin: 40px 0;
   }
 
   .storyboard-detail {
     grid-template-columns: 1fr;
+
     gap: 35px;
     margin: 50px 0;
   }
@@ -1221,7 +1225,9 @@ footer div {
   }
 
 
-  /* PROJET SUIVANT */
+  /* ========================================
+     PROJET SUIVANT
+  ======================================== */
 
   .next-project {
     margin-top: 70px;
@@ -1235,12 +1241,15 @@ footer div {
 
   .next-project h2 {
     margin-top: 14px;
+
     font-size: 22px;
     line-height: 1.1;
   }
 
 
-  /* COMPÉTENCES */
+  /* ========================================
+     COMPÉTENCES
+  ======================================== */
 
   .skills > h2 {
     font-size: clamp(28px, 9vw, 48px);
@@ -1264,11 +1273,14 @@ footer div {
   }
 
 
-  /* CONTACT */
+  /* ========================================
+     CONTACT
+  ======================================== */
 
   .contact-info {
     flex-direction: column;
     align-items: flex-start;
+
     gap: 15px;
   }
 
@@ -1277,16 +1289,22 @@ footer div {
   }
 
 
-  /* FOOTER */
+  /* ========================================
+     FOOTER
+  ======================================== */
 
   footer {
     flex-direction: column;
+
     gap: 20px;
+
     font-size: 12px;
   }
 
 
-  /* PAGE CV */
+  /* ========================================
+     PAGE CV
+  ======================================== */
 
   .cv-simple p {
     font-size: 12px;
