@@ -1213,21 +1213,40 @@ footer div {
   }
 
 
-  /* ========================================
-     PROJET 5 — 3 VISUELS
-  ======================================== */
+ /* ========================================
+   PROJET 5 — 3 IMAGES MOBILE
+   2 EN HAUT + 1 CENTRÉE EN DESSOUS
+======================================== */
 
-  .project5-images {
-    flex-direction: column;
+.project5-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 20px;
-    margin: 40px 0;
-  }
+  width: 100%;
+  max-width: 100%;
 
-  .project5-images img {
-    width: 100%;
-  }
+  gap: 12px;
+  margin: 40px 0;
+}
 
+.project5-images img {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  margin: 0;
+}
+
+.project5-images img:nth-child(3) {
+  grid-column: 1 / 3;
+
+  width: calc(50% - 6px);
+  max-width: calc(50% - 6px);
+
+  justify-self: center;
+}
 
   /* ========================================
      PROJET 4 — STORYBOARD MOBILE
