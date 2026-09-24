@@ -1074,26 +1074,26 @@ footer div {
 
   /* VIDÉOS VERTICALES */
 
-  .vertical-videos {
-    width: 100%;
+ /* PROJET 2 — VIDÉOS VERTICALES MOBILE */
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+.vertical-videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 10px;
-    margin: 40px 0;
-  }
+  width: 100%;
+  gap: 25px;
+  margin: 40px 0;
+}
 
-  .vertical-videos video {
-    width: calc((100% - 20px) / 3);
+.vertical-videos video {
+  width: 75%;
+  height: auto;
+  aspect-ratio: 9 / 16;
 
-    height: auto;
-    aspect-ratio: 9 / 16;
-
-    object-fit: cover;
-    background: black;
-  }
+  object-fit: cover;
+  background: black;
+}
 
 
   /* VIDÉOS HORIZONTALES */
