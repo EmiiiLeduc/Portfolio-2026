@@ -2,93 +2,261 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Volvo Entrepros</title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body>
 
+
+  <!-- ========================================
+       CHOIX DE LANGUE
+  ======================================== -->
+
+  <div class="project-language-switch language-switch">
+
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================
+       PAGE PROJET
+  ======================================== -->
+
   <main class="project-page">
 
-    <a href="../index.html" class="back-button">
+
+    <!-- RETOUR AUX PROJETS -->
+
+    <a href="../index.html"
+       class="back-button"
+       data-fr="← Retour aux projets"
+       data-en="← Back to projects">
+
       ← Retour aux projets
+
     </a>
+
+
+
+    <!-- ========================================
+         EN-TÊTE
+    ======================================== -->
 
     <header class="project-header">
 
-      <p class="project-category">
+
+      <p class="project-category"
+         data-fr="Volvo — Film"
+         data-en="Volvo — Film">
+
         Volvo — Film
+
       </p>
+
 
       <h1>
         Volvo Entrepros
       </h1>
 
-      <p class="project-description">
-        Prompt : Un concept, déclinable en mini-série, de film digital pour mettre en avant 		toutes les différentes forces de notre marque, en alliant la France et la Suède, pour 		nos clients professionnels.
+
+      <p class="project-description"
+
+         data-fr="Prompt : Un concept, déclinable en mini-série, de film digital pour mettre en avant toutes les différentes forces de notre marque, en alliant la France et la Suède, pour nos clients professionnels."
+
+         data-en="Prompt: Develop a digital film concept that could evolve into a mini-series, showcasing the different strengths of the Volvo brand while bringing together France and Sweden for a professional audience.">
+
+        Prompt : Un concept, déclinable en mini-série, de film digital pour mettre en avant
+        toutes les différentes forces de notre marque, en alliant la France et la Suède,
+        pour nos clients professionnels.
+
       </p>
 
+
     </header>
+
+
+
+    <!-- ========================================
+         CONTENU DU PROJET
+    ======================================== -->
 
     <div class="project-content">
 
 
-<div class="vertical-videos">
 
-  <video controls muted playsinline preload="metadata">
-    <source src="../videos/projet2-video1.mp4" type="video/mp4">
-  </video>
+      <!-- ========================================
+           3 VIDÉOS VERTICALES
+      ======================================== -->
 
-  <video controls muted playsinline preload="metadata">
-    <source src="../videos/projet2-video2.mp4" type="video/mp4">
-  </video>
-
-  <video controls muted playsinline preload="metadata">
-    <source src="../videos/projet2-video3.mp4" type="video/mp4">
-  </video>
-
-</div>
-
- <h2>...l</h2>
-      <p>
-        Nous avons commencé par chercher la meilleure manière d’allier les forces de la marque à 	une expérience client engageante. L’objectif : concevoir un film capable de s’adresser 		directement à une cible professionnelle et de susciter son intérêt pour lui donner envie 	d’en découvrir davantage sur la marque.
-      </p>
-
- <h2>...l</h2>
-      <p>
-        L’idée est de développer une mini-série qui s’enrichit au fil des années, avec un ou 		deux nouveaux profils par saison. Le format interview permet de créer un discours 		authentique et de favoriser l’identification : les clients peuvent se reconnaître dans 		les questions abordées, les expériences partagées et les réponses apportées. Les 		personnes interviewées sont de véritables professionnels qui utilisent Volvo comme 		véhicule dans le cadre de leur activité.
-      </p>
-
-  <h2>...l</h2>
-      <p>
-        Nous avons donc produit un long format par interview puis différents cuts de 6 s, 15 s et 30 s pour mettre en avant différents points importants pour le client.
-      </p>
+      <div class="vertical-videos">
 
 
-     <video autoplay muted loop playsinline>
-        <source src="../videos/projet2.mp4" type="video/mp4">
-      </video>
+        <video controls muted playsinline preload="metadata">
+
+          <source
+            src="../videos/projet2-video1.mp4"
+            type="video/mp4">
+
+        </video>
+
+
+        <video controls muted playsinline preload="metadata">
+
+          <source
+            src="../videos/projet2-video2.mp4"
+            type="video/mp4">
+
+        </video>
+
+
+        <video controls muted playsinline preload="metadata">
+
+          <source
+            src="../videos/projet2-video3.mp4"
+            type="video/mp4">
+
+        </video>
+
 
       </div>
 
-    <a href="projet3.html" class="next-project">
 
-      <span>Projet suivant</span>
 
-      <h2>
-       LDC →
-      </h2>
+      <!-- ========================================
+           PREMIER TEXTE
+      ======================================== -->
 
-    </a>
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Nous avons commencé par chercher la meilleure manière d’allier les forces de la marque à une expérience client engageante. L’objectif : concevoir un film capable de s’adresser directement à une cible professionnelle et de susciter son intérêt pour lui donner envie d’en découvrir davantage sur la marque."
+
+        data-en="We started by looking for the best way to combine the brand’s strengths with an engaging customer experience. The objective was to create a film that would speak directly to professionals, spark their interest and encourage them to discover more about the brand.">
+
+        Nous avons commencé par chercher la meilleure manière d’allier les forces de la marque
+        à une expérience client engageante. L’objectif : concevoir un film capable de s’adresser
+        directement à une cible professionnelle et de susciter son intérêt pour lui donner envie
+        d’en découvrir davantage sur la marque.
+
+      </p>
+
+
+
+      <!-- ========================================
+           DEUXIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="L’idée est de développer une mini-série qui s’enrichit au fil des années, avec un ou deux nouveaux profils par saison. Le format interview permet de créer un discours authentique et de favoriser l’identification : les clients peuvent se reconnaître dans les questions abordées, les expériences partagées et les réponses apportées. Les personnes interviewées sont de véritables professionnels qui utilisent Volvo comme véhicule dans le cadre de leur activité."
+
+        data-en="The idea was to develop a mini-series that could grow over the years, introducing one or two new profiles each season. The interview format creates an authentic conversation and makes the stories relatable. Viewers can see themselves in the topics discussed, the experiences shared and the answers given. Each interviewee is a real professional who uses a Volvo vehicle as part of their everyday work.">
+
+        L’idée est de développer une mini-série qui s’enrichit au fil des années,
+        avec un ou deux nouveaux profils par saison. Le format interview permet de
+        créer un discours authentique et de favoriser l’identification : les clients
+        peuvent se reconnaître dans les questions abordées, les expériences partagées
+        et les réponses apportées. Les personnes interviewées sont de véritables
+        professionnels qui utilisent Volvo comme véhicule dans le cadre de leur activité.
+
+      </p>
+
+
+
+      <!-- ========================================
+           TROISIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Nous avons donc produit un long format par interview puis différents cuts de 6 s, 15 s et 30 s pour mettre en avant différents points importants pour le client."
+
+        data-en="For each interview, we produced a long-form film as well as 6-, 15- and 30-second edits, each highlighting different key benefits for customers.">
+
+        Nous avons donc produit un long format par interview puis différents cuts
+        de 6 s, 15 s et 30 s pour mettre en avant différents points importants
+        pour le client.
+
+      </p>
+
+
+
+      <!-- ========================================
+           VIDÉO FINALE
+      ======================================== -->
+
+      <video autoplay muted loop playsinline>
+
+        <source
+          src="../videos/projet2.mp4"
+          type="video/mp4">
+
+      </video>
+
+
+
+      <!-- ========================================
+           PROJET SUIVANT
+      ======================================== -->
+
+      <a href="projet3.html"
+         class="next-project">
+
+
+        <span
+          data-fr="Projet suivant"
+          data-en="Next project">
+
+          Projet suivant
+
+        </span>
+
+
+        <h2>
+          LDC →
+        </h2>
+
+
+      </a>
+
 
     </div>
 
   </main>
-<script src="../script.js"></script>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="../script.js"></script>
+
 
 </body>
 

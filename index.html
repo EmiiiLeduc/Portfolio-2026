@@ -1,269 +1,629 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mon Portfolio Créatif</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
- <nav>
-      <div class="logo">EMI</div>
 
-      <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-<a href="cv/cv-emilie-leduc.pdf" target="_blank">
+<!-- ========================================
+     NAVIGATION
+======================================== -->
+
+<nav>
+
+  <div class="logo">EMI</div>
+
+  <div class="nav-links">
+
+    <a href="#about"
+       data-fr="À propos"
+       data-en="About">
+      À propos
+    </a>
+
+    <a href="#projects"
+       data-fr="Projets"
+       data-en="Projects">
+      Projets
+    </a>
+
+  <a href="cv/cv-emilie-leduc.pdf"
+   target="_blank"
+   data-fr="CV"
+   data-en="Resume">
   CV
 </a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
 
-  <header class="hero">
+    <a href="#contact"
+       data-fr="Contact"
+       data-en="Contact">
+      Contact
+    </a>
 
-    <div class="hero-content">
-      <p class="intro">Directrice artistique • Créative • Passionnée</p>
-
-      <h1>
-        I.N.A
-        <span>intelligence non artificielle.</span>
-      </h1>
-
-      <a href="#projects" class="button">
-        Voir mes projets
-      </a>
-    </div>
-  </header>
+  </div>
 
 
-  <section id="about" class="about">
-    <p class="section-number">01</p>
+  <!-- CHOIX DE LANGUE -->
 
-    <h2>À propos</h2>
+  <div class="language-switch">
 
-    <p class="about-text">
-     À l’ère de l’intelligence artificielle, notre façon de créer, de concevoir et d’imaginer 	les campagnes évolue. L’IA est un excellent outil, à condition de savoir quoi en faire.
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+</nav>
+
+
+
+<!-- ========================================
+     HERO
+======================================== -->
+
+<header class="hero">
+
+  <div class="hero-content">
+
+    <p class="intro"
+       data-fr="Directrice artistique • Créative • Passionnée"
+       data-en="Art Director • Creative • Passionate">
+      Directrice artistique • Créative • Passionnée
+    </p>
+
+
+<h1>
+
+  <span
+    class="ina-title"
+    data-fr="I.N.A"
+    data-en="N.A.I">
+    I.N.A
+  </span>
+
+  <span
+    class="ina-description"
+    data-fr="intelligence non artificielle."
+    data-en="non-artificial intelligence.">
+    intelligence non artificielle.
+  </span>
+
+</h1>
+
+
+    <a href="#projects"
+       class="button"
+       data-fr="Voir mes projets"
+       data-en="View my projects">
+      Voir mes projets
+    </a>
+
+  </div>
+
+</header>
+
+
+
+<!-- ========================================
+     À PROPOS
+======================================== -->
+
+<section id="about" class="about">
+
+  <p class="section-number">01</p>
+
+
+  <h2
+    data-fr="À Propos"
+    data-en="About">
+    À propos
+  </h2>
+
+
+  <p class="about-text"
+
+     data-fr="À l’ère de l’intelligence artificielle, notre façon de créer, de concevoir et d’imaginer les campagnes évolue. L’IA est un excellent outil, à condition de savoir quoi en faire.
 
 Moi, c’est Emi, I.N.A. — Intelligence Non Artificielle — au service des marques, avec ou sans IA.
 
-Créative et passionnée par la publicité depuis toujours, j’aime transformer des idées simples en concepts forts, des intuitions en univers et des projets en expériences qui marquent.
-    </p>
-  </section>
+Créative et passionnée par la publicité depuis toujours, j’aime transformer des idées simples en concepts forts, des intuitions en univers et des projets en expériences qui marquent."
+
+     data-en="In the age of artificial intelligence, the way we create, design and imagine campaigns is evolving. AI is a powerful tool — as long as you know what to do with it.
+
+I’m Emi, N.A.I. — Non-Artificial Intelligence — putting creativity to work for brands, with or without AI.
+
+Creative and passionate about advertising for as long as I can remember, I love turning simple ideas into powerful concepts, intuitions into worlds, and projects into memorable experiences.">
+
+    À l’ère de l’intelligence artificielle, notre façon de créer, de concevoir et d’imaginer les campagnes évolue. L’IA est un excellent outil, à condition de savoir quoi en faire.
+
+    Moi, c’est Emi, I.N.A. — Intelligence Non Artificielle — au service des marques, avec ou sans IA.
+
+    Créative et passionnée par la publicité depuis toujours, j’aime transformer des idées simples en concepts forts, des intuitions en univers et des projets en expériences qui marquent.
+
+  </p>
+
+</section>
 
 
-  <section id="projects" class="projects">
 
-    <p class="section-number">02</p>
+<!-- ========================================
+     PROJETS
+======================================== -->
 
-    <h2>Mes Projets</h2>
+<section id="projects" class="projects">
 
-    <div class="project-grid">
+  <p class="section-number">02</p>
 
-<a href="projets/projet1.html" class="project-link">
 
-  <article class="project-card">
-    <div class="project-image project-one"></div>
+  <h2
+    data-fr="Mes Projets"
+    data-en="My Projects">
+    Mes Projets
+  </h2>
 
-    <div class="project-info">
-      <p>WWF - Campagne 360° - Appel d’offres</p>
-      <h3>Call me President</h3>
-    </div>
-  </article>
 
-</a>
+  <div class="project-grid">
 
-<a href="projets/projet2.html" class="project-link">
+
+
+    <!-- PROJET 1 -->
+
+    <a href="projets/projet1.html" class="project-link">
 
       <article class="project-card">
+
+        <div class="project-image project-one"></div>
+
+        <div class="project-info">
+
+          <p
+            data-fr="WWF - Campagne 360° - Appel d’offres"
+            data-en="WWF - 360° Campaign - Pitch">
+            WWF - Campagne 360° - Appel d’offres
+          </p>
+
+          <h3>
+            Call me President
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 2 -->
+
+    <a href="projets/projet2.html" class="project-link">
+
+      <article class="project-card">
+
         <div class="project-image project-two"></div>
 
         <div class="project-info">
-          <p>Volvo -  Film</p>
-          <h3>Volvo Entrepros</h3>
-        </div>
-      </article>
-</a>
 
-<a href="projets/projet3.html" class="project-link">
+          <p
+            data-fr="Volvo - Film"
+            data-en="Volvo - Film">
+            Volvo - Film
+          </p>
+
+          <h3>
+            Volvo Entrepros
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 3 -->
+
+    <a href="projets/projet3.html" class="project-link">
 
       <article class="project-card">
+
         <div class="project-image project-three"></div>
 
         <div class="project-info">
-          <p>LDC - Campagne 360° - Appel d’offres</p>
-          <h3>Lancement d'un repère</h3>
-        </div>
-      </article>
-</a>
 
-<a href="projets/projet4.html" class="project-link">
+          <p
+            data-fr="LDC - Campagne 360° - Appel d’offres"
+            data-en="LDC - 360° Campaign - Pitch">
+            LDC - Campagne 360° - Appel d’offres
+          </p>
+
+          <h3
+            data-fr="Lancement d'un repère"
+            data-en="Launching a New Label">
+            Lancement d'un repère
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 4 -->
+
+    <a href="projets/projet4.html" class="project-link">
 
       <article class="project-card">
+
         <div class="project-image project-four"></div>
 
         <div class="project-info">
-          <p>Cyclo 3 Fort - Film - Appel d’offres</p>
-          <h3>Ode à nos jambes</h3>
+
+          <p
+            data-fr="Cyclo 3 Fort - Film - Appel d’offres"
+            data-en="Cyclo 3 Fort - Film - Pitch">
+            Cyclo 3 Fort - Film - Appel d’offres
+          </p>
+
+          <h3
+            data-fr="Ode à nos jambes"
+            data-en="Ode to Our Legs">
+            Ode à nos jambes
+          </h3>
+
         </div>
+
       </article>
-</a>
 
-<a href="projets/projet5.html" class="project-link">
-
-  <article class="project-card">
-    <div class="project-image project-five"></div>
-
-    <div class="project-info">
-      <p>Amsterdam - Print</p>
-      <h3>Print 3D</h3>
-    </div>
-  </article>
-
-</a>
-
-<a href="projets/projet6.html" class="project-link">
-
-  <article class="project-card">
-    <div class="project-image project-six"></div>
-
-    <div class="project-info">
-      <p>Center Parcs - Print</p>
-      <h3>Bâche XXL Bordeaux</h3>
-    </div>
-  </article>
-
-</a>
-
-<a href="projets/projet7.html" class="project-link">
-
-  <article class="project-card">
-    <div class="project-image project-seven"></div>
-
-    <div class="project-info">
-      <p>Popeyes - Activation </p>
-      <h3>Nouveau restaurant</h3>
-    </div>
-  </article>
-
-</a>
-
-<a href="projets/projet8.html" class="project-link">
-
-  <article class="project-card">
-    <div class="project-image project-eight"></div>
-
-    <div class="project-info">
-      <p>Ouigo - Activation</p>
-      <h3>Borne de la dernière chance</h3>
-    </div>
-  </article>
-
-</a>
-
-    </div>
-
-  </section>
+    </a>
 
 
-  <section class="skills">
+
+    <!-- PROJET 5 -->
+
+    <a href="projets/projet5.html" class="project-link">
+
+      <article class="project-card">
+
+        <div class="project-image project-five"></div>
+
+        <div class="project-info">
+
+<p
+  data-fr="Amsterdam - Print"
+  data-en="Amsterdam - Print">
+  Amsterdam - Print
+</p>
+
+          <h3>
+            Print 3D
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 6 -->
+
+    <a href="projets/projet6.html" class="project-link">
+
+      <article class="project-card">
+
+        <div class="project-image project-six"></div>
+
+        <div class="project-info">
+
+         <p
+  data-fr="Center Parcs - Print"
+  data-en="Center Parcs - Print">
+  Center Parcs - Print
+</p>
+
+          <h3
+            data-fr="Bâche XXL Bordeaux"
+            data-en="XXL Billboard - Bordeaux">
+            Bâche XXL Bordeaux
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 7 -->
+
+    <a href="projets/projet7.html" class="project-link">
+
+      <article class="project-card">
+
+        <div class="project-image project-seven"></div>
+
+        <div class="project-info">
+
+       <p
+  data-fr="Popeyes - Activation"
+  data-en="Popeyes - Activation">
+  Popeyes - Activation
+</p>
+
+          <h3
+            data-fr="Nouveau restaurant"
+            data-en="New Restaurant">
+            Nouveau restaurant
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+
+    <!-- PROJET 8 -->
+
+    <a href="projets/projet8.html" class="project-link">
+
+      <article class="project-card">
+
+        <div class="project-image project-eight"></div>
+
+        <div class="project-info">
+
+          <p
+  data-fr="Ouigo - Activation"
+  data-en="Ouigo - Activation">
+  Ouigo - Activation
+</p>
+
+          <h3
+            data-fr="Borne de la dernière chance"
+            data-en="The Last-Chance Ticket Machine">
+            Borne de la dernière chance
+          </h3>
+
+        </div>
+
+      </article>
+
+    </a>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ========================================
+     SKILLS
+======================================== -->
+
+<section class="skills">
 
   <p class="section-number">03</p>
-  <h2>Skills</h2>
+
+  <h2>
+    Skills
+  </h2>
+
+
+
+  <!-- SKILLS -->
 
   <div class="skills-block">
-    <h3>Skills</h3>
-    <p class="skills-line">
+
+    <h3>
+      Skills
+    </h3>
+
+    <p class="skills-line"
+       data-fr="Direction artistique — Montage vidéo — Craft — Conception — IA"
+       data-en="Art Direction - Video Editing - Craft - Conception - AI">
+
       Direction artistique — Montage vidéo — Craft — Conception — IA
+
     </p>
+
   </div>
 
+
+
+  <!-- SOFT SKILLS -->
+
   <div class="skills-block">
-    <h3>Soft skills</h3>
-    <p class="skills-line">
+
+    <h3>
+      Soft skills
+    </h3>
+
+    <p class="skills-line"
+       data-fr="Rigueur — Enthousiasme — Passion — Esprit d’équipe — Créativité — Persévérance"
+       data-en="Attention to Detail — Enthusiasm — Passion — Team Spirit — Creativity — Perseverance">
+
       Rigueur — Enthousiasme — Passion — Esprit d’équipe — Créativité — Persévérance
+
     </p>
+
   </div>
 
+
+
+  <!-- APTITUDES -->
+
   <div class="skills-block">
-    <h3>Aptitudes</h3>
-    <p class="skills-line">
+
+    <h3
+      data-fr="Aptitudes"
+      data-en="Additional Skills">
+      Aptitudes
+    </h3>
+
+    <p class="skills-line"
+       data-fr="Espagnol — Anglais — Peinture — Sketching — Logiciels de la suite Adobe — Prompt"
+       data-en="Spanish — English — Painting — Sketching — Adobe Creative Suite — Prompt Engineering">
+
       Espagnol — Anglais — Peinture — Sketching — Logiciels de la suite Adobe — Prompt
+
     </p>
+
   </div>
+
+
+
+  <!-- LOGICIELS -->
 
   <div class="software-block">
-    <h3>Logiciels</h3>
+
+    <h3
+      data-fr="Logiciels"
+      data-en="Software">
+      Logiciels
+    </h3>
+
 
     <div class="software-icons">
+
 
       <div class="software">
         <img src="images/photoshop.png" alt="Photoshop">
         <p>Photoshop</p>
       </div>
 
-     <div class="software">
+
+      <div class="software">
         <img src="images/indesign.png" alt="InDesign">
         <p>InDesign</p>
       </div>
+
 
       <div class="software">
         <img src="images/illustrator.png" alt="Illustrator">
         <p>Illustrator</p>
       </div>
 
+
       <div class="software">
         <img src="images/premiere-pro.png" alt="Premiere Pro">
         <p>Premiere Pro</p>
       </div>
+
 
       <div class="software">
         <img src="images/figma.png" alt="Figma">
         <p>Figma</p>
       </div>
 
+
     </div>
+
   </div>
 
 </section>
 
 
- <section class="contact" id="contact">
 
-<p class="section-number">04</p>
-<h2>Contact</h2>
+<!-- ========================================
+     CONTACT
+======================================== -->
+
+<section class="contact" id="contact">
+
+  <p class="section-number">04</p>
+
+  <h2>
+    Contact
+  </h2>
+
 
   <div class="contact-info">
+
+
+    <!-- TÉLÉPHONE -->
 
     <a href="tel:+33786059949">
       +33 7 86 05 99 49
     </a>
 
+
+    <!-- EMAIL -->
+
     <a href="mailto:emilie.leduc@live.fr">
       emilie.leduc@live.fr
     </a>
 
-    <a href="https://www.linkedin.com/in/emilie-leduc-5305141a3/" target="_blank">
+
+    <!-- LINKEDIN -->
+
+    <a href="https://www.linkedin.com/in/emilie-leduc-5305141a3/"
+       target="_blank">
       LinkedIn
     </a>
 
-<a href="cv/cv-emilie-leduc.pdf" target="_blank" class="contact-cv">
+
+    <!-- CV MOBILE -->
+
+   <a href="cv/cv-emilie-leduc.pdf"
+   target="_blank"
+   class="contact-cv"
+   data-fr="CV"
+   data-en="Resume">
   CV
 </a>
+
 
   </div>
 
 </section>
 
 
-  <footer>
-    <p>© 2026 Emi</p>
 
-  </footer>
+<!-- ========================================
+     FOOTER
+======================================== -->
+
+<footer>
+
+  <p>
+    © 2026 Emi
+  </p>
+
+</footer>
+
+
+
+<!-- ========================================
+     JAVASCRIPT
+======================================== -->
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>

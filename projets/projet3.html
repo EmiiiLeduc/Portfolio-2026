@@ -2,101 +2,292 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Lancement d'un repère</title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body class="project3-page">
 
+
+  <!-- ========================================
+       CHOIX DE LANGUE
+  ======================================== -->
+
+  <div class="project-language-switch language-switch">
+
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================
+       PAGE PROJET
+  ======================================== -->
+
   <main class="project-page">
 
-    <a href="../index.html" class="back-button">
+
+    <!-- RETOUR AUX PROJETS -->
+
+    <a href="../index.html"
+       class="back-button"
+       data-fr="← Retour aux projets"
+       data-en="← Back to projects">
+
       ← Retour aux projets
+
     </a>
+
+
+
+    <!-- ========================================
+         EN-TÊTE
+    ======================================== -->
 
     <header class="project-header">
 
-      <p class="project-category">
+
+      <p class="project-category"
+         data-fr="LDC — Campagne 360° — Appel d’offres"
+         data-en="LDC — 360° Campaign — Pitch">
+
         LDC — Campagne 360° — Appel d’offres
+
       </p>
 
-      <h1>
+
+      <h1
+        data-fr="Lancement d'un repère"
+        data-en="Launching a New Label">
+
         Lancement d'un repère
+
       </h1>
 
-      <p class="project-description">
-        Prompt : Une campagne 360° pour présenter et mettre en avant un nouveau repère créé par 	le groupe LDC sur le bien-être de ses volailles. LDC cherche une campagne créative qui montre ces engagements.
+
+      <p class="project-description"
+
+         data-fr="Prompt : Une campagne 360° pour présenter et mettre en avant un nouveau repère créé par le groupe LDC sur le bien-être de ses volailles. LDC cherche une campagne créative qui montre ces engagements."
+
+         data-en="Prompt: Create a 360° campaign to introduce and promote a new standard developed by the LDC Group to improve poultry welfare. LDC was looking for a creative campaign that would bring these commitments to life.">
+
+        Prompt : Une campagne 360° pour présenter et mettre en avant un nouveau repère créé par
+        le groupe LDC sur le bien-être de ses volailles. LDC cherche une campagne créative
+        qui montre ces engagements.
+
       </p>
+
 
     </header>
 
+
+
+    <!-- ========================================
+         CONTENU DU PROJET
+    ======================================== -->
+
     <div class="project-content">
 
-<video controls playsinline>
-  <source src="../videos/projet3.mp4" type="video/mp4">
-</video>
 
-<div class="horizontal-videos">
 
-  <video controls playsinline>
-    <source src="../videos/projet3-video1.mp4" type="video/mp4">
-  </video>
+      <!-- ========================================
+           VIDÉO PRINCIPALE
+      ======================================== -->
 
-  <video controls playsinline>
-    <source src="../videos/projet3-video2.mp4" type="video/mp4">
-  </video>
+      <video controls playsinline>
 
-  <video controls playsinline>
-    <source src="../videos/projet3-video3.mp4" type="video/mp4">
-  </video>
+        <source
+          src="../videos/projet3.mp4"
+          type="video/mp4">
 
-</div>
+      </video>
 
- <h2>...l</h2>
-      <p>
-        Pour cet appel d’offres, nous avons imaginé un concept qui place le nouveau repère LDC 		au cœur de la campagne. Ce repère symbolise les engagements concrets pris en faveur du 		bien-être des volailles.
+
+
+      <!-- ========================================
+           3 VIDÉOS HORIZONTALES
+      ======================================== -->
+
+      <div class="horizontal-videos">
+
+
+        <video controls playsinline>
+
+          <source
+            src="../videos/projet3-video1.mp4"
+            type="video/mp4">
+
+        </video>
+
+
+        <video controls playsinline>
+
+          <source
+            src="../videos/projet3-video2.mp4"
+            type="video/mp4">
+
+        </video>
+
+
+        <video controls playsinline>
+
+          <source
+            src="../videos/projet3-video3.mp4"
+            type="video/mp4">
+
+        </video>
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PREMIER TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Pour cet appel d’offres, nous avons imaginé un concept qui place le nouveau repère LDC au cœur de la campagne. Ce repère symbolise les engagements concrets pris en faveur du bien-être des volailles."
+
+        data-en="For this pitch, we developed a concept that puts LDC’s new standard at the heart of the campaign. The standard represents the tangible commitments the group has made to improve poultry welfare.">
+
+        Pour cet appel d’offres, nous avons imaginé un concept qui place le nouveau repère LDC
+        au cœur de la campagne. Ce repère symbolise les engagements concrets pris en faveur du
+        bien-être des volailles.
+
       </p>
 
- <h2>...l</h2>
-      <p>
-        Nous avons choisi de faire parler celles et ceux qui mettent ces engagements en pratique 	chaque jour : les éleveurs de nos filières. À travers eux, la campagne gagne en 		authenticité et donne un visage concret aux engagements portés par LDC.
+
+
+      <!-- ========================================
+           DEUXIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Nous avons choisi de faire parler celles et ceux qui mettent ces engagements en pratique chaque jour : les éleveurs de nos filières. À travers eux, la campagne gagne en authenticité et donne un visage concret aux engagements portés par LDC."
+
+        data-en="We chose to give a voice to the people who put these commitments into practice every day: the farmers within LDC’s supply chain. By focusing on them, the campaign feels more authentic and gives a human face to LDC’s commitments.">
+
+        Nous avons choisi de faire parler celles et ceux qui mettent ces engagements en pratique
+        chaque jour : les éleveurs de nos filières. À travers eux, la campagne gagne en
+        authenticité et donne un visage concret aux engagements portés par LDC.
+
       </p>
 
- <h2>...l</h2>
-      <p>
-	L’idée est de les mettre en scène au moment de signer la charte du nouveau repère LDC. 		Un geste simple mais fort, qui transforme leur signature en preuve d’engagement et vient 	incarner la démarche de manière humaine et crédible.
+
+
+      <!-- ========================================
+           TROISIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="L’idée est de les mettre en scène au moment de signer la charte du nouveau repère LDC. Un geste simple mais fort, qui transforme leur signature en preuve d’engagement et vient incarner la démarche de manière humaine et crédible."
+
+        data-en="The idea was to feature the farmers as they sign the charter for LDC’s new standard. A simple yet powerful gesture that turns their signature into tangible proof of their commitment, bringing the initiative to life in a human and credible way.">
+
+        L’idée est de les mettre en scène au moment de signer la charte du nouveau repère LDC.
+        Un geste simple mais fort, qui transforme leur signature en preuve d’engagement et vient
+        incarner la démarche de manière humaine et crédible.
+
       </p>
 
-<div class="vertical-images">
-
-  <img src="../images/projet3-1.jpg" alt="Projet 3 - Visuel 1">
-
-  <img src="../images/projet3-2.jpg" alt="Projet 3 - Visuel 2">
-
-  <img src="../images/projet3-3.jpg" alt="Projet 3 - Visuel 3">
-
-  <img src="../images/projet3-4.jpg" alt="Projet 3 - Visuel 4">
-
-</div>
 
 
-    <a href="projet4.html" class="next-project">
+      <!-- ========================================
+           4 VISUELS
+      ======================================== -->
 
-      <span>Projet suivant</span>
+      <div class="vertical-images">
 
-      <h2>
-       Cyclo 3 Fort →
-      </h2>
 
-    </a>
+        <img
+          src="../images/projet3-1.jpg"
+          alt="Projet 3 - Visuel 1">
+
+
+        <img
+          src="../images/projet3-2.jpg"
+          alt="Projet 3 - Visuel 2">
+
+
+        <img
+          src="../images/projet3-3.jpg"
+          alt="Projet 3 - Visuel 3">
+
+
+        <img
+          src="../images/projet3-4.jpg"
+          alt="Projet 3 - Visuel 4">
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PROJET SUIVANT
+      ======================================== -->
+
+      <a href="projet4.html"
+         class="next-project">
+
+
+        <span
+          data-fr="Projet suivant"
+          data-en="Next project">
+
+          Projet suivant
+
+        </span>
+
+
+        <h2>
+          Cyclo 3 Fort →
+        </h2>
+
+
+      </a>
+
 
     </div>
 
   </main>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="../script.js"></script>
+
 
 </body>
 

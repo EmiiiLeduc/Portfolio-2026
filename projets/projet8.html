@@ -2,69 +2,212 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Borne de la dernière chance</title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body>
 
+
+  <!-- ========================================
+       CHOIX DE LANGUE
+  ======================================== -->
+
+  <div class="project-language-switch language-switch">
+
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================
+       PAGE PROJET
+  ======================================== -->
+
   <main class="project-page">
 
-    <a href="../index.html" class="back-button">
+
+    <!-- RETOUR AUX PROJETS -->
+
+    <a href="../index.html"
+       class="back-button"
+       data-fr="← Retour aux projets"
+       data-en="← Back to projects">
+
       ← Retour aux projets
+
     </a>
+
+
+
+    <!-- ========================================
+         EN-TÊTE
+    ======================================== -->
 
     <header class="project-header">
 
-      <p class="project-category">
+
+      <p class="project-category"
+         data-fr="Ouigo - Activation — Fictive"
+         data-en="Ouigo - Activation — Fictional project">
+
         Ouigo - Activation — Fictive
+
       </p>
 
-      <h1>
+
+      <h1
+        data-fr="Borne de la dernière chance"
+        data-en="The Last-Chance Ticket Machine">
+
         Borne de la dernière chance
+
       </h1>
 
-      <p class="project-description">
-        Prompt : Une activation qui cible les voyages en train et particulièrement les départs 		en vacances l’été.
+
+      <p class="project-description"
+
+         data-fr="Prompt : Une activation qui cible les voyages en train et particulièrement les départs en vacances l’été."
+
+         data-en="Prompt: Create an activation focused on train travel, particularly during the busy summer holiday season.">
+
+        Prompt : Une activation qui cible les voyages en train et
+        particulièrement les départs en vacances l’été.
+
       </p>
+
 
     </header>
 
-<div class="project-content">
 
-<div class="project6-horizontal-image">
 
-  <img src="../images/projet8-visuel1.png" alt="Ouigo - Borne de la dernière chance">
+    <!-- ========================================
+         CONTENU DU PROJET
+    ======================================== -->
 
-</div>
+    <div class="project-content">
 
- <h2>...l</h2>
-  <p>
-      Nous avons réfléchi à une activation IRL autour des trajets des grandes vacances. Le jour des départs est toujours une journée infernale sur les routes de France avec la chaleur 	dans la voiture, les bouchons interminables, les enfants qui demandent quand est-ce qu’on arrive, 	l’envie de faire pipi alors qu’on vient de quitter l’aire d’autoroute… et le regret de ne 	pas être parti en train tout compte fait.
-  </p>
 
- <h2>...l</h2>
-  <p>
-Notre idée consiste à installer une borne d’achat de billets de train sur les aires d’autoroute entre Paris et Marseille (autoroute la plus fréquentée durant l’été) avec le message « Ok, c’est fichu pour l’aller, mais pas encore pour le retour ! »
-La borne donne la possibilité de faire le trajet retour en train sereinement et Ouigo se charge de ramener votre voiture.
-  </p>
-</div>
 
-    <a href="projet1.html" class="next-project">
+      <!-- ========================================
+           VISUEL
+      ======================================== -->
 
-      <span>Retour au premier projet</span>
+      <div class="project6-horizontal-image">
 
-      <h2>
-       WWF →
-      </h2>
 
-    </a>
+        <img
+          src="../images/projet8-visuel1.png"
+          alt="Ouigo - Borne de la dernière chance">
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PREMIER TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Nous avons réfléchi à une activation IRL autour des trajets des grandes vacances. Le jour des départs est toujours une journée infernale sur les routes de France avec la chaleur dans la voiture, les bouchons interminables, les enfants qui demandent quand est-ce qu’on arrive, l’envie de faire pipi alors qu’on vient de quitter l’aire d’autoroute… et le regret de ne pas être parti en train tout compte fait."
+
+        data-en="We developed an IRL activation around one of the most stressful moments of the summer: driving to your holiday destination. Departure day can quickly become a nightmare on French roads — the heat inside the car, endless traffic jams, kids constantly asking “Are we there yet?”, needing a bathroom break five minutes after leaving the service station… and eventually wondering why you didn’t just take the train.">
+
+        Nous avons réfléchi à une activation IRL autour des trajets des grandes
+        vacances. Le jour des départs est toujours une journée infernale sur les
+        routes de France avec la chaleur dans la voiture, les bouchons interminables,
+        les enfants qui demandent quand est-ce qu’on arrive, l’envie de faire pipi
+        alors qu’on vient de quitter l’aire d’autoroute… et le regret de ne pas être
+        parti en train tout compte fait.
+
+      </p>
+
+
+
+      <!-- ========================================
+           DEUXIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Notre idée consiste à installer une borne d’achat de billets de train sur les aires d’autoroute entre Paris et Marseille (autoroute la plus fréquentée durant l’été) avec le message « Ok, c’est fichu pour l’aller, mais pas encore pour le retour ! » La borne donne la possibilité de faire le trajet retour en train sereinement et Ouigo se charge de ramener votre voiture."
+
+        data-en="Our idea was to install train ticket machines at motorway service stations between Paris and Marseille, one of France’s busiest summer routes.
+The message: “Okay, it’s too late for the way there. But not for the way back!” The machine would allow travellers to book a peaceful return journey by train — while Ouigo takes care of bringing their car home.">
+
+        Notre idée consiste à installer une borne d’achat de billets de train
+        sur les aires d’autoroute entre Paris et Marseille (autoroute la plus
+        fréquentée durant l’été) avec le message « Ok, c’est fichu pour l’aller,
+        mais pas encore pour le retour ! »
+
+        La borne donne la possibilité de faire le trajet retour en train sereinement
+        et Ouigo se charge de ramener votre voiture.
+
+      </p>
+
+
+
+      <!-- ========================================
+           RETOUR AU PREMIER PROJET
+      ======================================== -->
+
+      <a href="projet1.html"
+         class="next-project">
+
+
+        <span
+          data-fr="Retour au premier projet"
+          data-en="Back to first project">
+
+          Retour au premier projet
+
+        </span>
+
+
+        <h2>
+          WWF →
+        </h2>
+
+
+      </a>
+
+
+    </div>
 
   </main>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="../script.js"></script>
+
 
 </body>
 

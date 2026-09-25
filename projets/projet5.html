@@ -2,84 +2,228 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Print 3D</title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body>
 
+
+  <!-- ========================================
+       CHOIX DE LANGUE
+  ======================================== -->
+
+  <div class="project-language-switch language-switch">
+
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================
+       PAGE PROJET
+  ======================================== -->
+
   <main class="project-page">
 
-    <a href="../index.html" class="back-button">
+
+    <!-- RETOUR AUX PROJETS -->
+
+    <a href="../index.html"
+       class="back-button"
+       data-fr="← Retour aux projets"
+       data-en="← Back to projects">
+
       ← Retour aux projets
+
     </a>
+
+
+
+    <!-- ========================================
+         EN-TÊTE
+    ======================================== -->
 
     <header class="project-header">
 
-      <p class="project-category">
+
+      <p class="project-category"
+         data-fr="Amsterdam - Print"
+         data-en="Amsterdam - Print">
+
         Amsterdam - Print
+
       </p>
+
 
       <h1>
         Print 3D
       </h1>
 
-      <p class="project-description">
-        Prompt : Une campagne print pensée pour mettre en valeur notre gamme de bières, dans le 	respect de la réglementation en vigueur en France, tout en adoptant une approche 		résolument esthétique et soignée.
+
+      <p class="project-description"
+
+         data-fr="Prompt : Une campagne print pensée pour mettre en valeur notre gamme de bières, dans le respect de la réglementation en vigueur en France, tout en adoptant une approche résolument esthétique et soignée."
+
+         data-en="Prompt: Create a print campaign designed to showcase the beer range while complying with French advertising regulations, with a strong focus on premium art direction and visual craft.">
+
+        Prompt : Une campagne print pensée pour mettre en valeur notre gamme de bières,
+        dans le respect de la réglementation en vigueur en France, tout en adoptant
+        une approche résolument esthétique et soignée.
+
       </p>
+
 
     </header>
 
-<div class="project-content">
-
-  <div class="project5-images">
-
-    <img src="../images/projet5-visuel1.png" alt="Projet 5 - Visuel 1">
-
-    <img src="../images/projet5-visuel2.png" alt="Projet 5 - Visuel 2">
-
-    <img src="../images/projet5-visuel3.png" alt="Projet 5 - Visuel 3">
-
-  </div>
-
- <h2>...l</h2>
-  <p>
-    Après 10 ans sans communication print, nous avons réfléchi à plusieurs approches, dont
-    une version en 3D pour parler de cette marque hollandaise.
-  </p>
-
- <h2>...l</h2>
-  <p>
-    La marque Amsterdam comprend aujourd’hui quatre bières avec différentes intensités, mais
-    toutes avec un goût intense. Pour mettre en avant les canettes, nous avons pensé à différentes
-    compositions avec des éléments liés à l’univers marin de la marque. Le tout dans un
-    rendu chrome 3D pour remettre en lumière la gamme.
-  </p>
-
-<div class="project5-wide-image">
-
-  <img src="../images/projet5-16x9.png" alt="Projet 5">
-
-</div>
 
 
-    <a href="projet6.html" class="next-project">
+    <!-- ========================================
+         CONTENU DU PROJET
+    ======================================== -->
 
-      <span>Projet suivant</span>
+    <div class="project-content">
 
-      <h2>
-       Center Parcs →
-      </h2>
 
-    </a>
+
+      <!-- ========================================
+           3 VISUELS
+      ======================================== -->
+
+      <div class="project5-images">
+
+
+        <img
+          src="../images/projet5-visuel1.png"
+          alt="Projet 5 - Visuel 1">
+
+
+        <img
+          src="../images/projet5-visuel2.png"
+          alt="Projet 5 - Visuel 2">
+
+
+        <img
+          src="../images/projet5-visuel3.png"
+          alt="Projet 5 - Visuel 3">
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PREMIER TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Après 10 ans sans communication print, nous avons réfléchi à plusieurs approches, dont une version en 3D pour parler de cette marque hollandaise."
+
+        data-en="After ten years without any print advertising, we explored several creative directions for the Dutch beer brand, including a fully 3D approach.">
+
+        Après 10 ans sans communication print, nous avons réfléchi à plusieurs
+        approches, dont une version en 3D pour parler de cette marque hollandaise.
+
+      </p>
+
+
+
+      <!-- ========================================
+           DEUXIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="La marque Amsterdam comprend aujourd’hui quatre bières avec différentes intensités, mais toutes avec un goût intense. Pour mettre en avant les canettes, nous avons pensé à différentes compositions avec des éléments liés à l’univers marin de la marque. Le tout dans un rendu chrome 3D pour remettre en lumière la gamme."
+
+        data-en="Amsterdam currently offers four beers with different levels of intensity, all sharing the same bold taste. To showcase the cans, we created a series of compositions inspired by the brand’s maritime universe. The entire campaign was rendered in 3D chrome, giving the range a bold new visual presence and putting the products back in the spotlight">
+
+        La marque Amsterdam comprend aujourd’hui quatre bières avec différentes
+        intensités, mais toutes avec un goût intense. Pour mettre en avant les
+        canettes, nous avons pensé à différentes compositions avec des éléments
+        liés à l’univers marin de la marque. Le tout dans un rendu chrome 3D
+        pour remettre en lumière la gamme.
+
+      </p>
+
+
+
+      <!-- ========================================
+           IMAGE LARGE 16:9
+      ======================================== -->
+
+      <div class="project5-wide-image">
+
+
+        <img
+          src="../images/projet5-16x9.png"
+          alt="Projet 5">
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PROJET SUIVANT
+      ======================================== -->
+
+      <a href="projet6.html"
+         class="next-project">
+
+
+        <span
+          data-fr="Projet suivant"
+          data-en="Next project">
+
+          Projet suivant
+
+        </span>
+
+
+        <h2>
+          Center Parcs →
+        </h2>
+
+
+      </a>
+
 
     </div>
 
   </main>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="../script.js"></script>
+
 
 </body>
 

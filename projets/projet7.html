@@ -2,69 +2,205 @@
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Nouveau restaurant</title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
+
 
 <body>
 
+
+  <!-- ========================================
+       CHOIX DE LANGUE
+  ======================================== -->
+
+  <div class="project-language-switch language-switch">
+
+    <button type="button" id="lang-fr" class="active">
+      FR
+    </button>
+
+    <span>/</span>
+
+    <button type="button" id="lang-en">
+      EN
+    </button>
+
+  </div>
+
+
+
+  <!-- ========================================
+       PAGE PROJET
+  ======================================== -->
+
   <main class="project-page">
 
-    <a href="../index.html" class="back-button">
+
+    <!-- RETOUR AUX PROJETS -->
+
+    <a href="../index.html"
+       class="back-button"
+       data-fr="← Retour aux projets"
+       data-en="← Back to projects">
+
       ← Retour aux projets
+
     </a>
+
+
+
+    <!-- ========================================
+         EN-TÊTE
+    ======================================== -->
 
     <header class="project-header">
 
-      <p class="project-category">
+
+      <p class="project-category"
+         data-fr="Popeyes - Activation — Non remporté"
+         data-en="Popeyes - Activation — Not won">
+
         Popeyes - Activation — Non remporté
+
       </p>
 
-      <h1>
+
+      <h1
+        data-fr="Nouveau restaurant"
+        data-en="New Restaurant">
+
         Nouveau restaurant
+
       </h1>
 
-      <p class="project-description">
-        Prompt : Une activation digitale pour le lancement des restaurants Popeyes en France.
+
+      <p class="project-description"
+
+         data-fr="Prompt : Une activation digitale pour le lancement des restaurants Popeyes en France."
+
+         data-en="Prompt: Create a digital activation for the launch of Popeyes restaurants in France.">
+
+        Prompt : Une activation digitale pour le lancement
+        des restaurants Popeyes en France.
+
       </p>
+
 
     </header>
 
-<div class="project-content">
 
-<div class="project6-horizontal-image">
 
-  <img src="../images/projet7-visuel1.png" alt="Projet 7 - Visuel">
+    <!-- ========================================
+         CONTENU DU PROJET
+    ======================================== -->
 
-</div>
+    <div class="project-content">
 
- <h2>...l</h2>
-  <p>
-    Nous avons réfléchi à une activation digitale sur un des serveurs français 
-	de GTA Online. Dans la version GTA Online, le joueur doit se nourrir et boire afin que 		son personnage reste en vie. Mais tout cela est payant.
-  </p>
 
- <h2>...l</h2>
-  <p>
-    Le principe est d’ouvrir un restaurant dans le jeu où tout est gratuit, pour faire profiter les joueurs pendant une semaine. À la fin de l’opération, lors du Z Event ou de la ZLAN, nous révélons que Popeyes arrive IRL en France : un livreur entre alors pour apporter leur commande aux gamers de l’événement.
-  </p>
-</div>
 
-    <a href="projet8.html" class="next-project">
+      <!-- ========================================
+           VISUEL
+      ======================================== -->
 
-      <span>Projet suivant</span>
+      <div class="project6-horizontal-image">
 
-      <h2>
-       Ouigo →
-      </h2>
 
-    </a>
+        <img
+          src="../images/projet7-visuel1.png"
+          alt="Projet 7 - Visuel">
+
+
+      </div>
+
+
+
+      <!-- ========================================
+           PREMIER TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Nous avons réfléchi à une activation digitale sur un des serveurs français de GTA Online. Dans la version GTA Online, le joueur doit se nourrir et boire afin que son personnage reste en vie. Mais tout cela est payant."
+
+        data-en="We developed the idea of a digital activation taking place on a French GTA Online server. In GTA Online, players need to eat and drink to keep their characters alive, but everything comes at a price.">
+
+        Nous avons réfléchi à une activation digitale sur un des serveurs français
+        de GTA Online. Dans la version GTA Online, le joueur doit se nourrir et boire
+        afin que son personnage reste en vie. Mais tout cela est payant.
+
+      </p>
+
+
+
+      <!-- ========================================
+           DEUXIÈME TEXTE
+      ======================================== -->
+
+      <h2>...l</h2>
+
+
+      <p
+        data-fr="Le principe est d’ouvrir un restaurant dans le jeu où tout est gratuit, pour faire profiter les joueurs pendant une semaine. À la fin de l’opération, lors du Z Event ou de la ZLAN, nous révélons que Popeyes arrive IRL en France : un livreur entre alors pour apporter leur commande aux gamers de l’événement."
+
+        data-en="Our idea was to open an in-game restaurant where everything would be free for an entire week. At the end of the activation, during Z Event or ZLAN, we would reveal that Popeyes was coming to France IRL. A delivery driver would then walk into the event and deliver Popeyes orders directly to the gamers.">
+
+        Le principe est d’ouvrir un restaurant dans le jeu où tout est gratuit,
+        pour faire profiter les joueurs pendant une semaine. À la fin de l’opération,
+        lors du Z Event ou de la ZLAN, nous révélons que Popeyes arrive IRL en France :
+        un livreur entre alors pour apporter leur commande aux gamers de l’événement.
+
+      </p>
+
+
+
+      <!-- ========================================
+           PROJET SUIVANT
+      ======================================== -->
+
+      <a href="projet8.html"
+         class="next-project">
+
+
+        <span
+          data-fr="Projet suivant"
+          data-en="Next project">
+
+          Projet suivant
+
+        </span>
+
+
+        <h2>
+          Ouigo →
+        </h2>
+
+
+      </a>
+
+
+    </div>
 
   </main>
+
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+
+  <script src="../script.js"></script>
+
 
 </body>
 
